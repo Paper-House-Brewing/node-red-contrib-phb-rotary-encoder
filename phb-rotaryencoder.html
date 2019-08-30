@@ -1,0 +1,42 @@
+<script type="text/javascript">
+    RED.nodes.registerType('phb-rotaryencoder',{
+        category: 'function',
+        color: '#f48120',
+        defaults: {
+            name: {value:""},
+            clkpin: {value:"0"},
+            dtpin: {value:"1"},
+            swpin: {value:"24"},
+        },
+        inputs:0,
+        outputs:2,
+        icon: "debug.png",
+        label: function() {
+            return this.name||"phb-rotaryencoder";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="phb-rotaryencoder">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+	<div class="form-row">
+        <label for="node-input-clkpin"><i class="icon-tag"></i> CLK Pin</label>
+        <input type="text" id="node-input-clkpin" placeholder="CLK Pin">
+    </div>
+	<div class="form-row">
+        <label for="node-input-dtpin"><i class="icon-tag"></i> DT Pin</label>
+        <input type="text" id="node-input-dtpin" placeholder="DT Pin">
+    </div>
+	<div class="form-row">
+        <label for="node-input-swpin"><i class="icon-tag"></i> Switch Pin</label>
+        <input type="text" id="node-input-swpin" placeholder="Switch Pin">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="phb-rotaryencoder">
+    <p>A node to simplify the usage of a rotary encoder.</p>
+</script>

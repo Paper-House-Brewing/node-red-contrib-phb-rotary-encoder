@@ -1,0 +1,19 @@
+{
+    "name": "red-contrib-phb-rotary-encoder",
+    "version": "0.0.1",
+    "dependencies": {
+        "raspberrypi-rotary-encoder": "^1.4.0"
+    },
+    "description": "A node to simplify the usage of a rotary encoder.",
+    "main": "phb-rotaryencoder.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Richard P. Gonzales",
+    "license": "GPL-3.0-only",
+    "node-red": {
+        "nodes": {
+            "phb-adafruit7segment": "phb-rotaryencoder.js"
+        }
+    }
+}
