@@ -4,9 +4,9 @@
         color: '#f48120',
         defaults: {
             name: {value:""},
-            clkpin: {value:"0"},
-            dtpin: {value:"1"},
-            swpin: {value:"24"},
+            clkpin: {value:"99"},
+            dtpin: {value:"99"},
+            swpin: {value:"99"},
         },
         inputs:0,
         outputs:2,
@@ -20,7 +20,7 @@
 <script type="text/x-red" data-template-name="phb-rotaryencoder">
     <div class="form-row">
         <label for="node-input-name"><i class="icon-tag"></i> Name</label>
-        <input type="text" id="node-input-name" placeholder="Name">
+        <input type="text" id="node-input-clkpin" placeholder="CLK Pin">
     </div>
 
 	<div class="form-row">
@@ -35,6 +35,8 @@
         <label for="node-input-swpin"><i class="icon-tag"></i> Switch Pin</label>
         <input type="text" id="node-input-swpin" placeholder="Switch Pin">
     </div>
+
+    <div class="form-tips"><span>WARNING! This is WIRINGPI pin numeration!! Please see https://pinout.xyz/pinout/wiringpi*</span></div>
 </script>
 
 <script type="text/x-red" data-help-name="phb-rotaryencoder">
