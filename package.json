@@ -1,5 +1,5 @@
 {
-    "name": "red-contrib-phb-rotary-encoder",
+    "name": "node-red-contrib-phb-rotary-encoder",
     "version": "0.0.1",
     "dependencies": {
         "raspberrypi-rotary-encoder": "^1.6.0"
